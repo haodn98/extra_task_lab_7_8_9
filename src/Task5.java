@@ -8,13 +8,13 @@ public class Task5 {
 
     private static String repFirstChar(String str) {
         char c = str.charAt(0);
-        if(Character.isUpperCase(c)){
+        if ((int) c > 64 && (int) c <= 90) {
             return "upper";
-        } else if (Character.isLowerCase(c)) {
+        } else if ((int) c > 96 && (int) c <= 122) {
             return "lower";
-        } else if (Character.isDigit(c)) {
+        } else if ((int) c > 47 && (int) c <= 57) {
             return "digit";
-        }else {
+        } else {
             return "other";
         }
 
